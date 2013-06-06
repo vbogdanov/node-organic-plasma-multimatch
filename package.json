@@ -1,0 +1,27 @@
+{
+  "author": "Valeri Bogdanov",
+  "concept": "Valeri Bogdanov",
+  "name": "organic-plasma-multimatch",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/VarnaLab/node-organic-plasma-multimatch.git"
+  },
+  "main": "./index.js",
+  "dependencies": {
+    "organic":"0.0.12",
+    "colors": "0.6.0-1",
+    "dict":"latest"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "devDependencies": {
+    "jasmine-node": "latest",
+    "shelljs": "latest"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
