@@ -110,7 +110,18 @@ function invokeHandler(plasma, pmo, handler) {
   handler.apply(null, args);
 }
 
+//to be used with Plasma.use and Plasma.decorate
+module.exports = function (state) { //this is bound to new plasma object
 
+  plasma.dissolve = dissolve;
+  plasma.precipitate = precipitate;
+  plasma.precipitateAll = precipitateAll;
+  plasma.onDissolved = onDissolved;
+  plasma.onPrecipitate = onPrecipitate;
+  plasma.onAll = onAll;
+
+  state._dissolved = new Map();
+}
 
 module.exports.decoratePlasma = function decoratePlasma (plasma) {
   plasma._dissolved = new Map();
